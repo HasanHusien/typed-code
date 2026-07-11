@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #d9d9d9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+}
+main p.descreption {
+  line-height: 1.5;
+  margin-top: -8px;
+  max-width: 380px;
+  color: #8f8f8f;
+}
+section.status {
+  text-align: center;
+  max-width: 380px;
+  background-color: #33d533de;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: 0.04s;
+}
+section.status h4 {
+  margin: 0;
+  margin-bottom: -8px;
+  font-size: 22px;
+}
+section.status p {
+  margin: 0;
+  font-size: 16px;
+}
+section.status-lost {
+  text-align: center;
+  max-width: 380px;
+  background-color: #d02b2b;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #fff;
+  transition: 0.04s;
+}
+section.status-lost h4 {
+  margin: 0;
+  margin-bottom: -8px;
+  font-size: 22px;
+}
+section.status-lost p {
+  margin: 0;
+  font-size: 16px;
+}
+section.forewell {
+  display: block;
+  text-align: center;
+  max-width: 380px;
+  background-color: #7a5ea7;
+  border: 1px dashed #323232;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+section.space {
+  display: block;
+  text-align: center;
+  max-width: 380px;
+  background-color: transparent;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+section.languages {
+  max-width: 380px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+section.languages span {
+  padding: 3px;
+  position: relative;
+}
+span.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+section.word {
+  max-width: 380px;
+  margin-top: 30px;
+  gap: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.word span {
+  background-color: #333;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.word span.missed {
+  color: #d02b2b;
+}
+section.keyboard {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 380px;
+}
+section.keyboard button {
+  background-color: #ffd742;
+  border: none;
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 16px;
+}
+section.keyboard button.wrong {
+  background-color: #d02b2b;
+  color: #fff;
+}
+section.keyboard button.right {
+  background-color: #599137;
+  color: #fff;
+}
+button.new-game {
+  margin-top: 30px;
+  background-color: #11b5e5;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  width: 200px;
+  height: 40px;
+  padding: 6px 12px;
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
