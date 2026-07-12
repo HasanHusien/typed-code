@@ -7,7 +7,7 @@ type KeyboardProps = {
   setGuessing: Dispatch<SetStateAction<string[]>>;
   word: string;
   isGameOver: boolean;
-  guessing: string;
+  guessing: string[];
 };
 
 export default function Keyboard({

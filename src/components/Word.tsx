@@ -4,7 +4,7 @@ import type { JSX } from "react";
 type WordProps = {
   word: string;
   isGameOver: boolean;
-  guessing: string;
+  guessing: string[];
 };
 
 function Word({ word, isGameOver, guessing }: WordProps): JSX.Element {

@@ -49,12 +49,7 @@ function App() {
         wrongGuessCount={wrongGuessCount}
       />
       <section className="languages">
-        <LanguagesBoxs
-          wrongGuessCount={wrongGuessCount}
-          setWord={setWord}
-          word={word}
-          isGameOver={isGameOver}
-        />
+        <LanguagesBoxs wrongGuessCount={wrongGuessCount} />
       </section>
       <section className="word">
         <Word word={word} guessing={guessing} isGameOver={isGameOver} />
@@ -65,7 +60,6 @@ function App() {
           guessing={guessing}
           setGuessing={setGuessing}
           isGameOver={isGameOver}
-          isGameLost={isGameLost}
         />
       </section>
       {isGameOver && (

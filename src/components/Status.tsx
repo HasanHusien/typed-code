@@ -2,13 +2,13 @@ import type { JSX } from "react";
 
 type StatusProps = {
   isGameWon: boolean;
-  isGameLost: boolean;
+  isGameOver: boolean;
   wrongGuessCount: number;
 };
 
 export default function status({
   isGameWon,
-  isGameLost,
+  isGameOver,
   wrongGuessCount,
 }: StatusProps): JSX.Element {
   const endOfGame: boolean = wrongGuessCount == 0 && !isGameWon;
@@ -21,7 +21,7 @@ export default function status({
           <p>🎉 Victory! You guessed it right — amazing work!</p>
         </section>
       )}
-      {isGameLost && (
+      {isGameOver && (
         <section className="status-lost">
           <h4>Game over !</h4>
           <p>💀 Oops! You ran out of guesses. Better luck next time!</p>
