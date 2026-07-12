@@ -13,7 +13,7 @@ export default function language({
     (item: Language, index: number): JSX.Element => {
       const isLost: boolean = wrongGuessCount > index;
 
-      const className: string | null = isLost ? "lost" : null;
+      const className: string | null = isLost ? "lost" : "";
 
       return (
         <span
