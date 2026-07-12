@@ -2,12 +2,12 @@ import { languages } from "./language";
 import { getFarewellText, getRandomWord } from "./utils";
 import { useState } from "react";
 
-import Header from "./Components/Header";
-import Status from "./Components/Status";
-import LanguagesBoxs from "./Components/Languages";
-import Word from "./Components/Word";
+import Header from "./components/Header";
+import Status from "./components/Status";
+import LanguagesBoxs from "./components/Languages";
+import Word from "./components/Word";
 import Confetti from "react-confetti";
-import Keyboard from "./Components/Keyboard";
+import Keyboard from "./components/Keyboard";
 
 function App() {
   const [word, setWord] = useState<string>((): string => getRandomWord());
