@@ -1,14 +1,16 @@
 import type { JSX } from "react";
 
+type StatusProps = {
+  isGameWon: boolean;
+  isGameLost: boolean;
+  wrongGuessCount: number;
+};
+
 export default function status({
   isGameWon,
   isGameLost,
   wrongGuessCount,
-}: {
-  isGameWon: boolean;
-  isGameLost: boolean;
-  wrongGuessCount: number;
-}): JSX.Element {
+}: StatusProps): JSX.Element {
   const endOfGame: boolean = wrongGuessCount == 0 && !isGameWon;
 
   return (
